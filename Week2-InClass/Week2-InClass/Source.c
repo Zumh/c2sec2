@@ -64,7 +64,8 @@ void greet(void) {
 // Student 2: Modify add() function to take user input
 int add(int a, int b) {
     // Placeholder
-    return 0; // Replace with actual logic
+    int result = a + b;
+    return result; // Replace with actual logic
 }
 
 // Student 3: Complete subtract() function
