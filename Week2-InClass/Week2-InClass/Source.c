@@ -13,7 +13,7 @@ void displayMenu(void);             // Student 6
 
 int main(void) {
     // Variable declarations
-    int choice;
+    int choice = 0;
     char input[100]; // For safer input handling
 
     // Display a welcome message
