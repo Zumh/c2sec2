@@ -2,7 +2,7 @@
 
 // Define constants (if necessary)
 // Example: #define PI 3.14159265358979323846
-
+#define INPUTSIZE 100
 // Function declarations
 void greet(void);                    // Student 1
 int add(int a, int b);               // Student 2
@@ -14,7 +14,7 @@ void displayMenu(void);             // Student 6
 int main(void) {
     // Variable declarations
     int choice = 0;
-    char input[100]; // For safer input handling
+    char input[INPUTSIZE]; // For safer input handling
 
     // Display a welcome message
     printf("Welcome to the Collaborative Code Management Program!\n");
@@ -27,6 +27,7 @@ int main(void) {
     if (fgets(input, sizeof(input), stdin) != NULL) {
         // Parse the input (placeholder)
         // Example: sscanf_s(input, "%d", &choice);
+        sscanf_s(input, "%d", &choice);
     }
 
     // Use a switch-case to handle menu options
@@ -88,10 +89,11 @@ unsigned long long factorial(int n) {
 // Student 6: Implement display_menu() function
 void displayMenu(void) {
     // Placeholder
-    printf("Menu:\n");
-    printf("1. Greet\n");
-    printf("2. Add two numbers\n");
-    printf("3. Subtract two numbers\n");
-    printf("4. Calculate the area of a circle\n");
-    printf("5. Calculate the factorial of a number\n");
+
+    printf("Menu:\n"
+        "1. Greet\n"
+        "2. Add two numbers\n"
+        "3. Subtract two numbers\n"
+        "4. Calculate the area of a circle\n"
+        "5. Calculate the factorial of a number\n");
 }
