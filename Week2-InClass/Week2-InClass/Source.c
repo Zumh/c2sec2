@@ -75,8 +75,8 @@ int subtract(int a, int b) {
 
 // Student 4: Implement calculate_area() function
 double calculateArea(double radius) {
-    // Placeholder
-    return 0.0; // Replace with actual logic
+    double result = pow(2,radius) * 3.14
+    return result; // Replace with actual logic
 }
 
 // Student 5: Develop factorial() function
