@@ -17,7 +17,10 @@ int main(void) {
     // Variable declarations
     int choice = 0;
     char input[INPUTSIZE]; // For safer input handling
-			   
+    int a = 2, b = 4;
+    double areaResult = 0.0;
+    long long factorialResult = 0;
+    int subtractResult = 0, addResult = 0;
     // Display a welcome message
     printf("Welcome to the Collaborative Code Management Program!\n");
 
@@ -39,15 +42,24 @@ int main(void) {
         break;
     case 2:
         // Call add function (placeholder)
+        addResult = add(a, b);
+        printf("Add result %d\n", addResult);
+
         break;
     case 3:
         // Call subtract function (placeholder)
+        subtractResult = subtract(a, b);
+        printf("Subtract %d\n", subtractResult);
         break;
     case 4:
         // Call calculate_area function (placeholder)
+        areaResult = calculateArea(a);
+        printf("Area %f\n", areaResult);
         break;
     case 5:
         // Call factorial function (placeholder)
+        factorialResult = factorial(b);
+        printf("Factorial %llu\n", factorialResult);
         break;
     default:
         printf("Invalid choice. Please try again.\n");
@@ -79,7 +91,7 @@ int subtract(int a, int b) {
 
 // Student 4: Implement calculate_area() function
 double calculateArea(double radius) {
-   double result = pow(2,radius) * 3.14
+    double result = pow(2, radius) * 3.14;
    return result; // Replace with actual logic
 }
 

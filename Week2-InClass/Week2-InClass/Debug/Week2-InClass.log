@@ -1,2 +1,3 @@
 ﻿  Source.c
+D:\c2\c2sec2\Week2-InClass\Week2-InClass\Source.c(94,21): warning C4013: 'pow' undefined; assuming extern returning int
   Week2-InClass.vcxproj -> D:\c2\c2sec2\Week2-InClass\Debug\Week2-InClass.exe
