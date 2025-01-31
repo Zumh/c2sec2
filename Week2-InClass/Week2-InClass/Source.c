@@ -16,7 +16,8 @@ int main(void) {
     // Variable declarations
     int choice = 0;
     char input[INPUTSIZE]; // For safer input handling
-    // Display a welcome message
+			   
+   // Display a welcome message
     printf("Welcome to the Collaborative Code Management Program!\n");
 
     // Call the display_menu() function
@@ -71,8 +72,8 @@ int add(int a, int b) {
 
 // Student 3: Complete subtract() function
 int subtract(int a, int b) {
-    // Placeholder
-    return 0; // Replace with actual logic
+    int result = a - b;
+    return result; // Replace with actual logic
 }
 
 // Student 4: Implement calculate_area() function
@@ -97,3 +98,4 @@ void displayMenu(void) {
         "4. Calculate the area of a circle\n"
         "5. Calculate the factorial of a number\n");
 }
+

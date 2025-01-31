@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\In class activity\\c2sec2\\Week2-InClass\\",
   "Documents": [
     {
@@ -7,10 +8,15 @@
       "RelativeMoniker": "D:0:0:{54159ABC-3880-4F0D-9F8D-77099A3AF3E6}|Week2-InClass\\Week2-InClass.vcxproj|solutionrelative:Week2-InClass\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
+=======
+  "WorkspaceRootPath": "C:\\Source\\c2sec2\\Week2-InClass\\",
+  "Documents": [],
+>>>>>>> origin/Kn-development
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
+<<<<<<< HEAD
       "DocumentGroups": [
         {
           "DockedWidth": 200,
@@ -36,6 +42,9 @@
           ]
         }
       ]
+=======
+      "DocumentGroups": []
+>>>>>>> origin/Kn-development
     }
   ]
 }
