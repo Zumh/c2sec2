@@ -1,0 +1,4 @@
+﻿  Source.c
+D:\c2\c2sec2\Week2-InClass\Week2-InClass\Source.c(31,21): warning C4047: 'function': 'int' differs in levels of indirection from 'char [100]'
+D:\c2\c2sec2\Week2-InClass\Week2-InClass\Source.c(31,21): warning C4024: 'isdigit': different types for formal and actual parameter 1
+  Week2-InClass.vcxproj -> D:\c2\c2sec2\Week2-InClass\x64\Debug\Week2-InClass.exe
