@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 // Define constants (if necessary)
 // Example: #define PI 3.14159265358979323846
@@ -84,8 +85,25 @@ double calculateArea(double radius) {
 
 // Student 5: Develop factorial() function
 unsigned long long factorial(int n) {
-    // Placeholder
-    return 0; // Replace with actual logic
+    // Store factorial result
+    int factorial = 1;
+
+    // If n is 0, 0! = 0, return 0
+    if (n == 0)
+    {
+        return 0;
+    }
+    // Else if n < 0, convert it to absolute value and then calculate
+    else if (n < 0) {
+        n = abs(n);
+    }
+
+    // Iterate over n -> 0 and multiply
+    for (int i = n; i > 0; i--) {
+        factorial = i * factorial;
+    }
+
+    return (long long)factorial;
 }
 
 // Student 6: Implement display_menu() function
