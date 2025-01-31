@@ -58,7 +58,7 @@ int main(void) {
 
 // Student 1: Implement greet() function
 void greet(void) {
-    // Placeholder
+    printf("Welcome to our Program!\n");
 }
 
 // Student 2: Modify add() function to take user input
