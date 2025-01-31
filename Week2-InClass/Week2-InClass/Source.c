@@ -1,7 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 // Define constants (if necessary)
 // Example: #define PI 3.14159265358979323846
+#define INPUTSIZE 100
 
 // Function declarations
 void greet(void);                    // Student 1
@@ -13,9 +15,12 @@ void displayMenu(void);             // Student 6
 
 int main(void) {
     // Variable declarations
-    int choice;
-    char input[100]; // For safer input handling
-
+    int choice = 0;
+    char input[INPUTSIZE]; // For safer input handling
+    int a = 2, b = 4;
+    double areaResult = 0.0;
+    long long factorialResult = 0;
+    int subtractResult = 0, addResult = 0;
     // Display a welcome message
     printf("Welcome to the Collaborative Code Management Program!\n");
 
@@ -27,6 +32,7 @@ int main(void) {
     if (fgets(input, sizeof(input), stdin) != NULL) {
         // Parse the input (placeholder)
         // Example: sscanf_s(input, "%d", &choice);
+        sscanf_s(input, "%d", &choice);
     }
 
     // Use a switch-case to handle menu options
@@ -36,15 +42,24 @@ int main(void) {
         break;
     case 2:
         // Call add function (placeholder)
+        addResult = add(a, b);
+        printf("Add result %d\n", addResult);
+
         break;
     case 3:
         // Call subtract function (placeholder)
+        subtractResult = subtract(a, b);
+        printf("Subtract %d\n", subtractResult);
         break;
     case 4:
         // Call calculate_area function (placeholder)
+        areaResult = calculateArea(a);
+        printf("Area %f\n", areaResult);
         break;
     case 5:
         // Call factorial function (placeholder)
+        factorialResult = factorial(b);
+        printf("Factorial %llu\n", factorialResult);
         break;
     default:
         printf("Invalid choice. Please try again.\n");
@@ -58,40 +73,59 @@ int main(void) {
 
 // Student 1: Implement greet() function
 void greet(void) {
-    // Placeholder
+    printf("Welcome to our Program!\n");
 }
 
 // Student 2: Modify add() function to take user input
 int add(int a, int b) {
     // Placeholder
-    return 0; // Replace with actual logic
+    int result = a + b;
+    return result; // Replace with actual logic
 }
 
 // Student 3: Complete subtract() function
 int subtract(int a, int b) {
-    // Placeholder
-    return 0; // Replace with actual logic
+    int result = a - b;
+    return result; // Replace with actual logic
 }
 
 // Student 4: Implement calculate_area() function
 double calculateArea(double radius) {
-    // Placeholder
-    return 0.0; // Replace with actual logic
+    double result = pow(2, radius) * 3.14;
+   return result; // Replace with actual logic
 }
 
 // Student 5: Develop factorial() function
 unsigned long long factorial(int n) {
-    // Placeholder
-    return 0; // Replace with actual logic
+    // Store factorial result
+    int factorial = 1;
+
+    // If n is 0, 0! = 0, return 0
+    if (n == 0)
+    {
+        return 0;
+    }
+    // Else if n < 0, convert it to absolute value and then calculate
+    else if (n < 0) {
+        n = abs(n);
+    }
+
+    // Iterate over n -> 0 and multiply
+    for (int i = n; i > 0; i--) {
+        factorial = i * factorial;
+    }
+
+    return (long long)factorial;
 }
 
 // Student 6: Implement display_menu() function
 void displayMenu(void) {
     // Placeholder
-    printf("Menu:\n");
-    printf("1. Greet\n");
-    printf("2. Add two numbers\n");
-    printf("3. Subtract two numbers\n");
-    printf("4. Calculate the area of a circle\n");
-    printf("5. Calculate the factorial of a number\n");
+    printf("Menu:\n"
+        "1. Greet\n"
+        "2. Add two numbers\n"
+        "3. Subtract two numbers\n"
+        "4. Calculate the area of a circle\n"
+        "5. Calculate the factorial of a number\n");
 }
+
