@@ -3,6 +3,7 @@
 // Define constants (if necessary)
 // Example: #define PI 3.14159265358979323846
 #define INPUTSIZE 100
+
 // Function declarations
 void greet(void);                    // Student 1
 int add(int a, int b);               // Student 2
@@ -15,7 +16,6 @@ int main(void) {
     // Variable declarations
     int choice = 0;
     char input[INPUTSIZE]; // For safer input handling
-
     // Display a welcome message
     printf("Welcome to the Collaborative Code Management Program!\n");
 
@@ -65,7 +65,8 @@ void greet(void) {
 // Student 2: Modify add() function to take user input
 int add(int a, int b) {
     // Placeholder
-    return 0; // Replace with actual logic
+    int result = a + b;
+    return result; // Replace with actual logic
 }
 
 // Student 3: Complete subtract() function
@@ -89,7 +90,6 @@ unsigned long long factorial(int n) {
 // Student 6: Implement display_menu() function
 void displayMenu(void) {
     // Placeholder
-
     printf("Menu:\n"
         "1. Greet\n"
         "2. Add two numbers\n"
